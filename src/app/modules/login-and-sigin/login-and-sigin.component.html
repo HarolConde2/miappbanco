@@ -1,0 +1,25 @@
+<div class="main">
+    <mat-grid-list cols="6" rowHeight="2" class="container-columns">
+        <mat-grid-tile [colspan]="2" [rowspan]="2" class="left-description">
+            <div class="container-logo">
+                <img class="img" src="../../../assets/logos/credit-card.png" alt="logo-banco">
+                <h1 class="title">Mi Banco</h1>
+            </div>
+            <div class="container-description-left">
+                <h3 class="subtitle">Adiministra toda tu informacion financiera</h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo minima hic praesentium. Voluptatem, quos. Sunt quod porro facere earum nesciunt?
+                </p>
+
+            </div>
+            <div class="container-footer-left">
+                <p class="description">&COPY; Mi Banco 2022</p>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="4" [rowspan]="4" class="right-description">
+            <div class="pages">
+                <router-outlet></router-outlet>
+            </div>          
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

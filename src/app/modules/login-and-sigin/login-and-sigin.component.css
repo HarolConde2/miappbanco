@@ -1,0 +1,74 @@
+.main .mat-grid-list .mat-grid-tile.left-description {
+    align-items: flex-start;
+    display: flex;
+    height: 100vh !important;
+    background-color: rgba(103, 58, 183, 0.8);
+    background-position: center;
+    padding: 0;
+    position: sticky;
+    top: 5px;
+}
+
+.main .mat-grid-list .mat-grid-tile.left-description .container-logo {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    width: auto;
+}
+
+.main .mat-grid-list .mat-grid-tile.left-description .container-logo .img {
+    height: auto;
+    width: 35px;
+}
+
+.main .mat-grid-list .mat-grid-tile.left-description .container-logo .title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+.main .mat-grid-list .mat-grid-tile.left-description .container-description-left {
+    bottom: 30%;
+    padding: 1rem 4rem 1rem 2rem;
+    position: absolute;
+}
+.main .mat-grid-list .mat-grid-tile.left-description .container-footer-left {
+    bottom: 5%;
+    padding: 1rem 2rem 1rem 2rem;
+    position: absolute;
+}
+.main .mat-grid-list .mat-grid-tile.left-description .container-description-left .subtitle {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.main .mat-grid-list .mat-grid-tile.left-description .container-description-left .description {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.main .mat-grid-list .mat-grid-tile.left-description .container-footer-left .description {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.main .mat-grid-list .mat-grid-tile.left-description> ::ng-deep .mat-grid-tile-content{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.main .mat-grid-list .mat-grid-tile.right-description {
+    align-items: flex-start;
+    display: flex;
+    height: 100vh !important;
+    background-color: #fff;
+    background-position: center;
+}
+.main .mat-grid-list .mat-grid-tile.right-description .pages{
+    width: 40%;
+}

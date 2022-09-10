@@ -1,0 +1,56 @@
+<h2 class="subtitle">Registro</h2>
+<p>Registrate ahora y obten todos nuestros beneficios.</p>
+<form [formGroup]="siginForm" class="form-sigin" (ngSubmit)="createUser()">
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input type="text" matInput formControlName="name" [errorStateMatcher]="matcher"
+            placeholder="Nombre">
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="siginForm.hasError('name') && !siginForm.hasError('required')">
+            Por favor ingresa un nombre valido.
+        </mat-error>
+        <mat-error *ngIf="siginForm.hasError('required')">
+            El nombre es<strong>requerido</strong>.
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Apellidos</mat-label>
+        <input type="text" matInput formControlName="lastName" [errorStateMatcher]="matcher"
+            placeholder="Apellidos">
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="siginForm.hasError('lastName') && !siginForm.hasError('required')">
+            Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="siginForm.hasError('required')">
+            El apellido es <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>No. Indentificacion</mat-label>
+        <input type="number" matInput formControlName="identification" [errorStateMatcher]="matcher"
+            placeholder="Numero de indentificacion">
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="siginForm.hasError('indentification') && !siginForm.hasError('required')">
+            Please enter a valid number indentification
+        </mat-error>
+        <mat-error *ngIf="siginForm.hasError('required')">
+            Indentificacion es <strong>requerida</strong>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email" [errorStateMatcher]="matcher"
+            placeholder="email@example.com">
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="siginForm.hasError('email') && !siginForm.hasError('required')">
+            Por favor ingresa un email valido.
+        </mat-error>
+        <mat-error *ngIf="siginForm.hasError('required')">
+            El email es<strong>requerido</strong>.
+        </mat-error>
+    </mat-form-field>
+    
+    <button mat-raised-button class="btn-register" color="primary">Registrate</button>
+</form>
+<p class="text-login">¿Ya te has registraste?</p>
+<button mat-stroked-button color="primary" [routerLink]="['/']" class="btn-login" color="primary">Iniciar sesión</button>
