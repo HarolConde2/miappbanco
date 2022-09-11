@@ -14,6 +14,10 @@ const routes: Routes = [
     {
         path: 'mydashboard',
         loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule)
+    },
+    {
+        path: 'envia',
+        loadChildren: () => import('./modules/envia/envia.module').then(m => m.EnviaModule)
     }
 
 

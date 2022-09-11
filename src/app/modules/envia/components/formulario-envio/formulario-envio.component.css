@@ -1,0 +1,128 @@
+.container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.containerForm {
+  padding: 40px;
+  height: 100%;
+  /* background-image: url(/src/assets/texturas/shattered.png) !important; */
+  background-color: white;
+  border: 1px solid #e2e2e2;
+}
+.containerEnvios {
+  padding: 40px;
+  border: 1px solid #e2e2e2;
+  background-color: white;
+}
+.containerDisponible {
+  padding: 40px;
+  color: black;
+  background-color: white;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.title {
+  font-weight: bold;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.description {
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
+.containerL{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px 20px 15px;
+  background-color:#f1f1f1;
+  border-radius: 5px;
+}
+.containerD {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px 10px 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.btn{
+  background-color: #673ab7;
+  border: 1px solid #e2e2e2;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 82%;
+  height: 35px;
+}
+.giroL1{
+  font-weight: bold;
+}
+.giroL2{
+  color: red;
+  font-weight: bold;
+}
+.disp{
+  font-weight: bold;
+  font-size: 1.5vw;
+  padding: 20px;
+}
+.form-control{
+  padding: 10px 15px 10px 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border-style: none;
+}
+.fomulario{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.form-group{
+  grid-column-start: 0;
+  grid-column-end: 2;
+  grid-row-start: 0;
+  grid-row-end: 1;
+  display: grid;
+  margin-right: 25px;
+}
+.form-group1 {
+  grid-column-start: 0;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  margin-right: 25px;
+}
+.form-group2 {
+  grid-column-start: 0;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  margin-right: 25px;
+}
+.form-group3 {
+  display: grid;
+}
+.text{
+  font-size: 13px;
+  font-weight: bold;
+}
+.aviso1{
+  background-color: rgb(193, 249, 129);
+  padding: 10px;
+  padding-bottom: 0.5px;
+  border-radius: 6px;
+}
+.aviso2{
+  background-color: rgb(249, 147, 129);
+  padding: 10px;
+  padding-bottom: 0.5px;
+  border-radius: 6px;
+}

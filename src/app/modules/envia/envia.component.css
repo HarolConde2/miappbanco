@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+}
+.containerMenu {
+  border: 1px solid #e2e2e2;
+  background-color: white;
+}

@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="containerForm">
+    <h1 class="title">Envía</h1>
+    <h2 class="description">Haz giros de forma facil y rápida entre tus contactos y comerciantes.</h2>
+    <div>
+      <form class="fomulario" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label class="text">Nombre o alias de quien recibe</label>
+          <input type="text" formControlName="nombre" class="form-control" placeholder="">
+        </div>
+        <div class="form-group1">
+          <label class="text">Ingrese tu contraseña</label>
+          <input type="text" formControlName="pass" class="form-control" placeholder="">
+        </div>
+        <div class="form-group2">
+          <label class="text">¿Cuánto vas a envias?</label>
+          <input type="number" formControlName="money" class="form-control" placeholder="">
+        </div>
+        <div class="form-group3">
+          <label class="text">Número de teléfono</label>
+          <input type="text" formControlName="tel" class="form-control" placeholder="">
+        </div>
+        <button mat-raised-button class="btn" color="primary">Registrar</button>
+      </form>
+    </div>
+    <div class="aviso1" *ngIf="true">
+      <p class="text">¡El giro se ha enviado con éxito!</p>
+    </div>
+    <div class="aviso2" *ngIf="false">
+      <p class="text">¡Ha ocurrido un error en el envío del giro!</p>
+    </div>
+  </div>
+  <div class="containerDisponible">
+    <h1 class="description">Disponible</h1>
+    <div class="containerD">
+      <label class="disp" for="">{{12500000 | currency}}</label>
+    </div>
+  </div>
+  <div class="containerEnvios">
+    <h1 class="description">Último giro realizado</h1>
+    <div class="containerL">
+      <label class="giroL1" for="">Enviado a {{'Rebeca'}}</label>
+      <label class="giroL2" for="">{{500000 | currency}}</label>
+    </div>
+  </div>
+</div>
